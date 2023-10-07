@@ -1,0 +1,26 @@
+#Race car Game from https://pythonprogramming.net/pygame-python-3-part-1-intro/
+
+#Imports pygame and initiates it
+import pygame
+pygame.init()
+
+#Sets game display (surface) to 800px by 600 px
+gameDisplay = pygame.display.set_mode((800,600))
+pygame.display.set_caption('A bit Racey')
+
+# Frames per second (FPS) 
+clock = pygame.time.Clock()
+
+#
+crashed = False
+
+while not crashed:
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            crashed = True
+
+        print(event)
+
+    pygame.display.update()
+    clock.tick(60)
