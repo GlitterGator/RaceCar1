@@ -1,17 +1,18 @@
-#Race car Game from https://pythonprogramming.net/pygame-python-3-part-1-intro/
+# Race car Game from https://pythonprogramming.net/pygame-python-3-part-1-intro/
 
-#Imports pygame and initiates it
+# Imports pygame and initiates it
 import pygame
 pygame.init()
 
-#Sets game display (surface) to 800px by 600 px
+# Sets game display (surface) to 800px by 600 px
 gameDisplay = pygame.display.set_mode((800,600))
 pygame.display.set_caption('A bit Racey')
 
-# Frames per second (FPS) 
+# Frames per second (FPS).  30 FPS is about the frame rate that people see best.
 clock = pygame.time.Clock()
 
-#
+# crashed is a variable. 
+# clock.tick(60) means 60 FPS
 crashed = False
 
 while not crashed:
@@ -24,3 +25,7 @@ while not crashed:
 
     pygame.display.update()
     clock.tick(60)
+
+# Close out the game when done.
+pygame.quit()
+quit()
