@@ -57,6 +57,9 @@ def game_loop():
 
     x_change = 0
 ######
+# thing_startx means starts randomly between left and right of screen
+# thing_starty means it starts at the top of the screen (so you don't crash immediately)
+
     thing_startx = random.randrange(0, display_width)
     thing_starty = -600
     thing_speed = 7
