@@ -34,6 +34,9 @@ while not crashed:
         if event.type == pygame.QUIT:
             crashed = True
 
+
+# Keydown event means is a key being pushed.
+# Keyup event means the key is no longer being pressed down.
         ############################
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
